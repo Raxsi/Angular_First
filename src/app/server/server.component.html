@@ -5,4 +5,4 @@
 
 <h3>App component</h3>
 
-<p>Our {{'Server'}} with ID {{ServerID}} is {{ getstatus()}}</p>
+<p [ngStyle]="{backgroundColor:getcolor()}" [ngClass]="{online:status==='online'}">Our {{'Server'}} with ID {{ServerID}} is {{ getstatus()}}</p>
