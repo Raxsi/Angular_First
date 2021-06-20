@@ -1,2 +1,4 @@
-<button type="button" class="btn btn-primary" [disabled]="!ToggleButtonserver">Add Server</button>
+<button type="button" class="btn btn-primary" [disabled]="!ToggleButtonserver" (click)="onServerclick()">Add Server</button>
+<p [innerText]="ServercreateStatus"></p>
 <p>servers Button works!</p>
+ 

@@ -7,11 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServersComponent implements OnInit {
 ToggleButtonserver=false;
+ServercreateStatus='Server is not been created';
   constructor() { 
     setTimeout(()=>{this.ToggleButtonserver=true;},2000);
   }
 
+
   ngOnInit(): void {
   }
 
+  onServerclick()
+  {
+    this.ServercreateStatus='Server is created on click';
+  }
 }
