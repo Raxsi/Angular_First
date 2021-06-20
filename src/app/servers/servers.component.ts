@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent implements OnInit {
-
-  constructor() { }
+ToggleButtonserver=false;
+  constructor() { 
+    setTimeout(()=>{this.ToggleButtonserver=true;},2000);
+  }
 
   ngOnInit(): void {
   }
