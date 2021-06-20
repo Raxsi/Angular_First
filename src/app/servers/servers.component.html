@@ -1,3 +1,9 @@
+<label> Server name</label>
+<input type="text" class="form-control"
+(input)="OnUpdateName($event)">
+<input type="text" class="form-control"
+[ngModel]="ServerNameUpdate"> <!-- shouldn't use the banana-box with ngModel if you're manaully setting the change event -->
+<p>{{ServerNameUpdate }}</p>
 <button type="button" class="btn btn-primary" [disabled]="!ToggleButtonserver" (click)="onServerclick()">Add Server</button>
 <p [innerText]="ServercreateStatus"></p>
 <p>servers Button works!</p>
